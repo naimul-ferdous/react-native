@@ -30,7 +30,7 @@ const SquareScreen = () => {
         return;
 
       default:
-        break;
+        return;
     }
   };
 
