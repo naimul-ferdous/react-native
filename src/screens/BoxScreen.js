@@ -3,34 +3,45 @@ import React from "react";
 
 const BoxScreen = () => {
   return (
-    <View style={styles.viewStyle}>
-      <Text style={styles.textOneStyle}>Child 1</Text>
-      <Text style={styles.textTwoStyle}>Child 2</Text>
-      <Text style={styles.textThreeStyle}>Child 3</Text>
+    <View style={styles.parentStyle}>
+      <View style={styles.viewOneStyle} />
+      <View style={styles.viewTwoStyle} />
+      <View style={styles.viewThreeStyle} />
     </View>
   );
 };
 export default BoxScreen;
 
 const styles = StyleSheet.create({
-  viewStyle: {
-    borderWidth: 3,
+  parentStyle: {
+    borderWidth: 1,
     borderColor: "black",
     height: 200,
-    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
   },
 
-  textOneStyle: {
-    borderWidth: 3,
+  viewOneStyle: {
+    borderWidth: 1,
     borderColor: "red",
+    backgroundColor: "red",
+    width: "30%",
+    height: "50%",
   },
-  textTwoStyle: {
-    borderWidth: 3,
-    borderColor: "red",
-    position: "absolute",
+  viewTwoStyle: {
+    borderWidth: 1,
+    borderColor: "green",
+    backgroundColor: "green",
+    width: "30%",
+    height: "50%",
+    top: "26%",
   },
-  textThreeStyle: {
-    borderWidth: 3,
-    borderColor: "red",
+  viewThreeStyle: {
+    borderWidth: 1,
+    borderColor: "blue",
+    backgroundColor: "blue",
+    width: "30%",
+    height: "50%",
   },
 });
