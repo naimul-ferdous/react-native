@@ -7,14 +7,14 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Hello konnichiwa</Text>
       <Button
         onPress={() => navigation.navigate("Components")}
-        title="Go to componetns button"
+        title="Go to componetns demo"
       />
       <Button
         title="Go to list demo"
         onPress={() => navigation.navigate("List")}
       />
       <Button
-        title="Go to images screen"
+        title="Go to images demo"
         onPress={() => navigation.navigate("Image")}
       />
       <Button
@@ -23,18 +23,23 @@ const HomeScreen = ({ navigation }) => {
       />
 
       <Button
-        title="Go to Color Screen"
+        title="Go to Color demo"
         onPress={() => navigation.navigate("Color")}
       />
 
       <Button
-        title="Go to Square Screen"
+        title="Go to Square demo"
         onPress={() => navigation.navigate("Square")}
       />
 
       <Button
-        title="Go to Text Screen"
+        title="Go to Text demo"
         onPress={() => navigation.navigate("Text")}
+      />
+
+      <Button
+        title="Go to Box demo"
+        onPress={() => navigation.navigate("Box")}
       />
     </View>
   );
